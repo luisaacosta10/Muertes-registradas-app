@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proporción de Muertes Registradas</title>
+  <link rel="stylesheet" href="assets/index.css" />
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="module" src="assets/index.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Proporción de Muertes Registradas</h1>
+    <p>Visualización interactiva basada en datos de Our World in Data</p>
+  </header>
+
+  <main>
+    <section class="filtros">
+      <label for="pais">Selecciona un país:</label>
+      <select id="pais"></select>
+    </section>
+    <section class="grafico">
+      <div id="chart"></div>
+    </section>
+
+    <section class="info">
+      <h2>🧾 Origen y estructura de los datos</h2>
+      <p>Fuente: <a href="https://ourworldindata.org">Our World in Data</a><br>
+      Variables: País, Código, Año, Proporción de muertes registradas (%)<br>
+      Cobertura: Mundial, datos desde 2000 hasta 2019</p>
+
+      <h2>📊 Tipos de análisis disponibles</h2>
+      <p>Comparaciones entre países y evolución temporal del registro de muertes.</p>
+
+      <h2>🌍 Importancia práctica</h2>
+      <p>Estos datos pueden informar políticas públicas, decisiones sanitarias y campañas de visibilización en regiones con bajo registro de defunciones.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado por Luisa Acosta - Ciencia de Datos</p>
+  </footer>
+</body>
+</html>
